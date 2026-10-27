@@ -6,6 +6,8 @@ import viteReact from '@vitejs/plugin-react'
 
 const config = defineConfig({
   resolve: { tsconfigPaths: true },
+  server: { host: true, allowedHosts: true },
+  preview: { host: true },
   plugins: [tanstackStart(), viteReact()],
 })
 
