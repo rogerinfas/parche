@@ -3,13 +3,25 @@
 Red social solo para estudiantes La Salle en Colombia.
 Mapa en vivo + `Estoy libre` + pines efímeros + tarjeta compartible.
 
-> Estado: **solo documentación**. Repo público para el piloto.
-> Piloto: 50 estudiantes · Bogotá, octubre 2026 · Gratis.
+> Estado: **MVP web móvil funcional** en `web/` + docs. Piloto: 50 estudiantes · Bogotá.
+> Stack: TanStack Start fullstack (front + back) + Postgres dockerizada.
 
 ## Qué es
 
 Parche muestra lo que pasa cerca de tu sede, ahora:
 sin grupos de WhatsApp que no avisan, sin redes abiertas donde no sabes quién es estudiante.
+
+## App web móvil (`web/`)
+
+TanStack Start: `/` mapa, `/explorar`, `/libre`, `/chats`, `/perfil` + publicar pin.
+
+```bash
+cd web
+npm install
+docker compose up -d
+cp .env.example .env
+npm run dev
+```
 
 ## Docs
 
