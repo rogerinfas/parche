@@ -18,8 +18,8 @@ export default function MapView({ pines }: { pines: Pin[] }) {
       .then((L) => {
         if (cancelled || !ref.current) return
         map = L.map(ref.current, { zoomControl: false }).setView([SEDE.lat, SEDE.lng], 15)
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-          attribution: '© OpenStreetMap © CARTO',
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors',
           maxZoom: 19,
         }).addTo(map)
         pines.forEach((p) => {
